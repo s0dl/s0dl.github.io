@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A minimal, responsive portfolio for GitHub Pages." />
+  <title>Saad Chaudry | Portfolio</title>
+  <link rel="icon" href="public/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Saad Chaudry home">
+        <span class="brand-mark">SC</span>
+        <span>Saad Chaudry</span>
+      </a>
+      <nav class="nav">
+        <a href="#projects">Projects</a>
+        <a href="#stack">Stack</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-copy">
+          <div class="hero-intro">
+            <p class="eyebrow">Portfolio</p>
+            <h1>Hi, I’m <span class="accent">Saad</span>.</h1>
+            <p class="lede">
+              Recent graduate looking for full-stack, backend, and AI engineering roles. I have worked at the forefront
+              of AI developement, evaluating and building with commercial LLMs on a variety of open-source and private projects.
+              I also have a strong foundation in software engineering principles and a passion for building scalable, maintainable, and user-friendly applications.
+            </p>
+          </div>
+
+          <div class="profile-details">
+            <div class="profile-badge">Available for freelance</div>
+            <h2>Full-Stack Developer</h2>
+            <p class="profile-note">
+              I have experience building web applications, ML pipelines, REST APIs, and AI agents using a variety of technologies. 
+              My work has me working with 10+ programming languages and frameworks, which has made me adept at quickly learning new tools and adapting to different project requirements.
+            </p>
+            <section class="stack-section" id="stack" aria-label="Stack">
+              <p class="eyebrow">Stack</p>
+              <div class="stack-list" id="stack-list"></div>
+            </section>
+          </div>
+        </div>
+
+        <aside class="project-panel" id="projects" aria-label="Selected work">
+          <div class="section-heading projects-heading">
+            <div>
+              <p class="eyebrow">Projects</p>
+            </div>
+            <div class="dots" id="project-dots" aria-label="Project navigation"></div>
+          </div>
+          <div class="carousel-shell" aria-label="Project carousel">
+            <button class="carousel-btn" id="prev-project" aria-label="Previous project">
+              ←
+            </button>
+            <div class="carousel-viewport" id="project-viewport">
+              <div class="carousel-track" id="project-track"></div>
+            </div>
+            <button class="carousel-btn" id="next-project" aria-label="Next project">
+              →
+            </button>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="section-heading">
+          <p class="eyebrow">Contact</p>
+        </div>
+        <div class="contact-card">
+          <a class="contact-link" href="mailto:82chaudrys@gmail.com">
+            82chaudrys@gmail.com
+          </a>
+          <a class="contact-link" href="https://github.com/s0dl" target="_blank" rel="noreferrer">
+            GitHub
+          </a>
+          <a class="contact-link" href="https://www.linkedin.com/in/saad-c/" target="_blank" rel="noreferrer">
+            LinkedIn
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Saad Chaudry</p>
+      <a href="#home">Back to top</a>
+    </footer>
+  </div>
+</body>
+
+</html>
